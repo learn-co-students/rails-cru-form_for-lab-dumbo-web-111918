@@ -1,0 +1,16 @@
+in artist show.html.erb
+
+<h1><%=@artist.name%></h1>
+
+
+<div>
+  <p><%=@artist.bio%></p>
+</div>
+
+<div>
+  <ul>
+    <%@artist.songs.each do |q| %>
+      <li><%q.name%></li>
+    <% end %>
+  </ul>
+</div>

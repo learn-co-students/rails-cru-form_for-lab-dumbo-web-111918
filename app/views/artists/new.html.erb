@@ -1,0 +1,17 @@
+in artist new.html.erb
+
+
+<h1>ARTIST FORM</h1>
+
+<%= form_for(@artist) do |f| %>
+
+<p>
+  <%= f.label "Artist Name" %><br>
+  <%= f.text_field :name %><br>
+</p>
+<p>
+  <%= f.label "Artist Bio" %><br>
+  <%= f.text_area :bio %><br>
+</p>
+<%= f.submit "Create Artist" %>
+<% end %>
